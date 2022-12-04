@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js init v1.22.19
+
+PATH: 
+  C:\Users\KMA\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\KMA\bin;%JAVA_HOME%\bin;C:\Python310\Scripts;C:\Python310;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\KMA\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Program Files\dotnet;C:\Users\KMA\.windows-build-tools\python27;C:\Users\KMA\AppData\Roaming\nvm\v16.13.2\node_modules\windows-build-tools\node_modules\.bin;C:\Users\KMA\AppData\Roaming\nvm\v16.13.2\node_modules\node_modules\.bin;C:\Users\KMA\AppData\Roaming\nvm\v16.13.2\node_modules\.bin;C:\Users\KMA\AppData\Roaming\nvm\node_modules\.bin;C:\Users\KMA\AppData\Roaming\node_modules\.bin;C:\Users\KMA\AppData\node_modules\.bin;C:\Users\KMA\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\KMA\AppData\Roaming\nvm\v16.13.2\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts;C:\Python310;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\KMA\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\KMA\.windows-build-tools\python27;C:\Users\KMA\.windows-build-tools\python27;C:\Users\KMA\AppData\Roaming\nvm\v14.17.0\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Program Files\nodejs\node_modules\windows-build-tools\node_modules\.bin;C:\Program Files\nodejs\node_modules\.bin;C:\Users\KMA\AppData\Roaming\nvm;C:\Users\KMA\.windows-build-tools\python27;C:\Users\KMA\AppData\Roaming\nvm\v14.17.0\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Program Files\nodejs\node_modules\windows-build-tools\node_modules\.bin;C:\Program Files\nodejs\node_modules\.bin;C:\Users\KMA\AppData\Roaming\nvm;C:\Users\KMA\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\KMA\AppData\Local\Programs\Python\Python39;C:\Users\KMA\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Users\KMA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\KMA\AppData\Roaming\nvm;C:\Users\KMA\AppData\Local\GitHubDesktop\bin;C:\Users\KMA\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\Users\KMA\AppData\Roaming\nvm\v14.13.0\node_modules\yarn\lib\cli.js:92864:59)
+      at Object.<anonymous> (C:\Users\KMA\AppData\Roaming\nvm\v14.13.0\node_modules\yarn\lib\cli.js:85054:38)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\KMA\AppData\Roaming\nvm\v14.13.0\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\KMA\AppData\Roaming\nvm\v14.13.0\node_modules\yarn\lib\cli.js:321:13
+      at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+npm manifest: 
+  {
+    "name": "ma-mood-ui-react",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/KIMMIAE/ma-mood-ui-react.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/KIMMIAE/ma-mood-ui-react/issues"
+    },
+    "homepage": "https://github.com/KIMMIAE/ma-mood-ui-react#readme",
+    "devDependencies": {
+      "@types/react": "^18.0.26",
+      "postcss": "^8.4.19",
+      "react": "^18.2.0",
+      "sass": "^1.56.1",
+      "typescript": "^4.9.3"
+    },
+    "dependencies": {
+      "style-inject": "^0.3.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
