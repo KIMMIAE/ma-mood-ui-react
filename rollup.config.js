@@ -36,10 +36,6 @@ const config = [
       peerDepsExternal(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        extract: false,
-        inject: false,
-        modules: true,
-        sourceMap: false,
         use: ["sass"],
         plugins: [tailwindcss(tailwindConfig)],
       }),
