@@ -15,22 +15,12 @@ const pkg = require("./package.json");
 const config = [
   {
     external: [/node_modules/],
-    input: "./src/index.ts",
+    input: "./src/components/index.ts",
     output: [
       {
         dir: "./dist",
         format: "cjs",
-        preserveModules: true,
         preserveModulesRoot: "src",
-      },
-      {
-        file: pkg.module,
-        format: "es",
-      },
-      {
-        name: pkg.name,
-        file: pkg.browser,
-        format: "umd",
       },
     ],
     plugins: [
