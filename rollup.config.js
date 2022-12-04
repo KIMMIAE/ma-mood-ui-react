@@ -10,6 +10,8 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
+import tailwindcss from 'tailwindcss'
+const tailwindConfig = require('./tailwind.config.js')
 const extensions = ["js", "jsx", "ts", "tsx", "mjs"];
 const pkg = require("./package.json");
 const config = [
@@ -38,9 +40,7 @@ const config = [
         modules: true,
         sourceMap: false,
         use: ["sass"],
-        plugins: [
-          require('tailwindcss')
-        ]
+        plugins: [tailwindcss(tailwindConfig)],
       }),
     ],
   },
