@@ -35,8 +35,6 @@ const config = [
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
         extract: false,
-        inject: (cssVariableName) =>
-          `import styleInject from 'style-inject';styleInject(${cssVariableName});`,
         modules: true,
         sourceMap: false,
         use: ["sass"],
