@@ -2,7 +2,11 @@
   "name": "ma-mood-ui-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "module": "dist/esm/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
@@ -20,7 +24,8 @@
   },
   "homepage": "https://github.com/KIMMIAE/ma-mood-ui-react#readme",
   "devDependencies": {
-    "@babel/core": "^7.20.5",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-react": "^7.17.12",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^23.0.3",
     "@rollup/plugin-node-resolve": "^15.0.1",
@@ -43,7 +48,9 @@
     "react-dom": "^18.2.0",
     "rollup": "^3.5.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
