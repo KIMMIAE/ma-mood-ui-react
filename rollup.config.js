@@ -40,6 +40,9 @@ const config = [
         modules: true,
         sourceMap: false,
         use: ["sass"],
+        plugins: [
+          require('tailwindcss')
+        ]
       }),
     ],
   },
