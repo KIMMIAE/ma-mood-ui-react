@@ -6,43 +6,49 @@
  */
 import babel from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
+import { resolve } from 'path';
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
+import external from "rollup-plugin-peer-deps-external";
+import { terser } from "rollup-plugin-terser";
 const extensions = ["js", "jsx", "ts", "tsx", "mjs"];
-const pkg = require("./package.json");
+const packageJson = require("./package.json");
 const config = [
   {
     external: [/node_modules/],
-    input: "./src/components/index.ts",
+    input: resolve(__dirname, "./src/components/index.ts"),
     output: [
       {
-        dir: "./dist",
-        format: "cjs",
-        preserveModulesRoot: "src",
+        file: packageJson.module,
+        format: "esm",
+        sourcemap: true,
       },
     ],
     plugins: [
-      nodeResolve({ extensions }),
+      postcss({
+        config: {
+          path: "./postcss.config.js",
+        },
+        extensions: [".css"],
+        minimize: true,
+        use: ["sass"],
+        inject: {
+          insertAt: "top",
+        },
+      }),
       babel({
+        babelHelpers: "bundled",
         exclude: "node_modules/**",
         extensions,
-        include: ["src/**/*"],
       }),
       commonjs({ include: "node_modules/**" }),
       peerDepsExternal(),
+      terser(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      postcss({
-        extract: true,
-        modules: true,
-        sourceMap: false,
-        use: ["sass"],
-        config: {
-          path: './postcss.config.js',
-          ctx: null
-      }
-      }),
+      external(),
+      nodeResolve({ extensions }),
     ],
   },
 ];
